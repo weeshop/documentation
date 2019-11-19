@@ -28,4 +28,4 @@ ignore:
 deploy:
   - type: git
     repo: git@github.com:weeshop/documentation.git
-    branch: deploy
+    branch: master

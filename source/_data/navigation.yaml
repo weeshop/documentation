@@ -15,6 +15,11 @@
       "path": "index.html"
     },
     {
+      "text": "手动安装",
+      "type": "link",
+      "path": "install.html"
+    },
+    {
       "text": "© 猫须科技",
       "type": "label"
     },
