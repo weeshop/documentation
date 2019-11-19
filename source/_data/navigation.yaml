@@ -1,0 +1,27 @@
+{
+  "logo": {
+    "text": "WeeShop 开源商城",
+    "type": "link",
+    "path": "index.html"
+  },
+  "main": [
+    {
+      "text": "QQ群：714023327",
+      "type": "label"
+    },
+    {
+      "text": "快速入门",
+      "type": "link",
+      "path": "index.html"
+    },
+    {
+      "text": "© 猫须科技",
+      "type": "label"
+    },
+    {
+      "text": "粤ICP备18006542号-1",
+      "type": "link",
+      "path": "http://www.beian.miit.gov.cn/"
+    }
+  ]
+}

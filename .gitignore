@@ -1,1 +1,9 @@
+db.json
+node_modules
+public
+
+themes/doc
+
 .idea/
+.DS_Store
+.deploy_git/
