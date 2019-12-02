@@ -1,36 +1,45 @@
 title: 快速入门
 ---
 
+<div style="width: 200px; margin-left:60px;">
 
-<p align="center">
-  <a href="https://github.com/weeshop/weeshop" target="_blank">
-    <img width="200" src="images/WeeShop.png" alt="WeeShop">
-      ![GitHub stars](https://img.shields.io/github/stars/weeshop/weeshop?style=social) ![GitHub forks](https://img.shields.io/github/forks/weeshop/weeshop?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/weeshop/weeshop?style=social)
-  </a>
-  QQ群：714023327
+[![WeeShop](images/WeeShop.png)](https://github.com/weeshop/weeshop)
+
+</div>
+
+<p style="text-align: center; display: flex;">
+
+![GitHub stars](https://img.shields.io/github/stars/weeshop/weeshop?style=social)
+![GitHub forks](https://img.shields.io/github/forks/weeshop/weeshop?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/weeshop/weeshop?style=social)
+
 </p>
-  
-<p align="center">
-优雅易用的开源商城，支持多货币，多语言，包含 <a href="https://github.com/weeshop/WeeApp" target="_blank">移动端以及微信小程序</a>。<br>
-基于 GPL-2.0 开源协议发布，真开源，这是属于中国开源社区的商城。<br>
+
+
+优雅易用的开源商城，支持多货币，多语言，包含 [移动端以及微信小程序](https://github.com/weeshop/WeeApp)
+基于 GPL-2.0 开源协议发布，真开源，这是属于中国开源社区的商城。
 基于 Laravel 的基因，来自 Symfony 的底层技术，来自 Drupal Commerce 的核心技术，由 Drupal 中国开源社区维护。
-</p>
 
-<h2>加入 WeeShop 社区</h2>
+## 加入 WeeShop 社区
+QQ群：714023327
+
 
 感谢您的关注，WeeShop的成功离不开您的意见和支持：
 - 马上Star此项目，最好同时Fork此项目，以帮助让更多的人看到此项目。
 - 我们万分欢迎您参与开发，我们的组织在 [github.com/weeshop](https://github.com/weeshop)。 
 - 我们希望听见您的心声，请 [创建issue](https://github.com/weeshop/WeeShop/issues/new) 来表达您的意见。
 
-<h2>界面截图</h2>
+## 界面截图
 
 简洁的美观的 UI 界面：
-<img src="images/screenshot.jpg">
-<img src="images/screenshot3.jpg">
+
+![](images/screenshot.jpg)
+
+![](images/screenshot3.jpg)
 
 支持使用 `Apache Solr` 集群对商品进行`全文检索`，支持使用属性进行`分面搜索`，支持对搜索结果进行预提示：
-<img src="images/screenshot2.png">
+
+![](images/screenshot2.png)
 
 
 工程 [WeeShop/WeeShop](https://github.com/weeshop/weeshop) 后台与服务端，微信小程序端的工程在 [WeeShop/WeeApp](https://github.com/weeshop/WeeApp)。
@@ -55,17 +64,17 @@ title: 快速入门
 
 如果docker镜像下载慢，请自行了解 [如何加速docker镜像下载](https://www.baidu.com/s?wd=docker%E5%8A%A0%E9%80%9F)
 
-如果不希望使用 docker 快速安装，也可以参考 [通过传统的手工方式安装](docs/install.md)
+如果不希望使用 docker 快速安装，也可以参考 [通过传统的手工方式安装](user_guide/install.html)
 
 先决条件：
 - 确保本机8080端口没有被占用。这是因为 `docker-compose.yml` 中需要映射 Web 容器的 80 端口到物理机的 8080 端口。
 
 ```bash
-# 创建 WeeShop 模板工程
-composer create-project weeshop/project-base myshop --stability dev --no-interaction
+# 创建 WeeShop 模板工程sdsdfsdf
+composer create-project weeshop/project-base:dev-8.x-1.x WeeShop --stability dev --no-interaction -vvv
 
 # 进行工程目录
-cd myshop
+cd WeeShop
 
 # 启动 docker 容器
 docker-compose up -d
@@ -76,7 +85,7 @@ docker-compose exec web bash
 # 进入容器后，在容器内继续运行下面的命令
 # 安装实例
 su - application -c \
-"cd /app/web/sites && /usr/local/bin/drupal site:install  --force --no-interaction weeshop  \
+"cd /app/web/sites && /usr/local/bin/drupal site:install --force --no-interaction weeshop  \
 --langcode='en'  \
 --db-type='mysql'  \
 --db-host='db'  \

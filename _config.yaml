@@ -21,6 +21,12 @@ theme: ../node_modules/hexo-theme-doc
 
 theme_config:
   favicon: images/bitbug_favicon.ico
+  support:
+    link_url: 'https://www.catwork.cn'
+    text: 'WeeShop 及其文档的版权属于'
+    link_text: '© 猫须科技'
+    navigation: false
+    navigation_label: '© 猫须科技'
 
 ignore:
   # development only: ignore sub node_modules when `npm link hexo-theme-doc`
@@ -29,3 +35,19 @@ deploy:
   - type: git
     repo: git@github.com:weeshop/documentation.git
     branch: master
+
+marked:
+  gfm: true
+  pedantic: false
+  breaks: false
+  smartLists: true
+  smartypants: true
+  modifyAnchors: ''
+  autolink: true
+  sanitizeUrl: false
+  headerIds: true
+  prependRoot: false
+  external_link:
+    enable: false
+    exclude: []
+    nofollow: false

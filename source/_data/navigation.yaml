@@ -15,9 +15,72 @@
       "path": "index.html"
     },
     {
-      "text": "手动安装",
+      "text": "用户指南",
+      "type": "label"
+    },
+    {
+      "text": "安装",
       "type": "link",
-      "path": "install.html"
+      "path": "user_guide/install.html"
+    },
+    {
+      "text": "管理后台",
+      "type": "link",
+      "path": "user_guide/login.html"
+    },
+    {
+      "text": "店铺管理",
+      "type": "link",
+      "path": "user_guide/store.html"
+    },
+    {
+      "text": "商品管理",
+      "type": "link",
+      "path": "user_guide/product.html"
+    },
+    {
+      "text": "支付网关管理",
+      "type": "link",
+      "path": "user_guide/payment.html"
+    },
+    {
+      "text": "购物",
+      "type": "link",
+      "path": "user_guide/shopping.html"
+    },
+    {
+      "text": "结账",
+      "type": "link",
+      "path": "user_guide/checkout.html"
+    },
+    {
+      "text": "订单管理",
+      "type": "link",
+      "path": "user_guide/order.html"
+    },
+    {
+      "text": "促销",
+      "type": "link",
+      "path": "user_guide/promotion.html"
+    },
+    {
+      "text": "开发者指南",
+      "type": "label"
+    },
+    {
+      "text": "创建工程",
+      "type": "link",
+      "path": "dev_guide/project.html"
+    },
+    {
+        "text": "模块开发",
+        "type": "link",
+        "path": "dev_guide/module.html"
+    },
+    {
+        "text": "主题开发",
+        "type": "link",
+        "path": "dev_guide/theme.html"
     },
     {
       "text": "© 猫须科技",
