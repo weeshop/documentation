@@ -3,7 +3,7 @@
   <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
 
-    <title>WeeShop |  </title>
+    <title>WeeShop | 安装 </title>
     <meta name="description" content>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -24,7 +24,7 @@
   </head>
   <body>
 
-   <script>window.__INITIAL_STATE__ = {"page":{"path":"install.html","title":""},"data":{"navigation":{"logo":{"text":"WeeShop 开源商城","type":"link","path":"index.html"},"main":[{"text":"QQ群：714023327","type":"label"},{"text":"快速入门","type":"link","path":"index.html"},{"text":"手动安装","type":"link","path":"install.html"},{"text":"© 猫须科技","type":"label"},{"text":"粤ICP备18006542号-1","type":"link","path":"http://www.beian.miit.gov.cn/"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/bitbug_favicon.ico"}}}</script>
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"安装","path":"user_guide/install.html","support":{"link_url":"https://www.catwork.cn","link_text":"© 猫须科技","text":"WeeShop 及其文档的版权属于","navigation":false,"navigation_label":"© 猫须科技"}},"data":{"navigation":{"logo":{"text":"WeeShop 开源商城","type":"link","path":"index.html"},"main":[{"text":"QQ群：714023327","type":"label"},{"text":"快速入门","type":"link","path":"index.html"},{"text":"用户指南","type":"label"},{"text":"安装","type":"link","path":"user_guide/install.html"},{"text":"管理后台","type":"link","path":"user_guide/login.html"},{"text":"店铺管理","type":"link","path":"user_guide/store.html"},{"text":"商品管理","type":"link","path":"user_guide/product.html"},{"text":"支付网关管理","type":"link","path":"user_guide/payment.html"},{"text":"购物","type":"link","path":"user_guide/shopping.html"},{"text":"结账","type":"link","path":"user_guide/checkout.html"},{"text":"订单管理","type":"link","path":"user_guide/order.html"},{"text":"促销","type":"link","path":"user_guide/promotion.html"},{"text":"开发者指南","type":"label"},{"text":"创建工程","type":"link","path":"dev_guide/project.html"},{"text":"模块开发","type":"link","path":"dev_guide/module.html"},{"text":"主题开发","type":"link","path":"dev_guide/theme.html"},{"text":"© 猫须科技","type":"label"},{"text":"粤ICP备18006542号-1","type":"link","path":"http://www.beian.miit.gov.cn/"}]}},"config":{"timezone":"UTC","root":"/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/bitbug_favicon.ico","support":{"link_url":"https://www.catwork.cn","link_text":"© 猫须科技","text":"WeeShop 及其文档的版权属于","navigation":false,"navigation_label":"© 猫须科技"}}}}</script>
 
     <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/index.html" class="doc-navbar__logo"><img src="/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">WeeShop 开源商城</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
     <div class="doc-content">
@@ -32,20 +32,40 @@
     <div class="dc-card">
       <div id="react-search-results-root"></div>
       <div id="page-content" class="doc-formatting">
-        <h1 id="传统方式安装指南"><a href="#传统方式安装指南" class="headerlink" title="传统方式安装指南"></a>传统方式安装指南</h1><h2 id="运行环境要求"><a href="#运行环境要求" class="headerlink" title="运行环境要求"></a>运行环境要求</h2><h3 id="HTTP服务器"><a href="#HTTP服务器" class="headerlink" title="HTTP服务器"></a>HTTP服务器</h3><p>暂时只支持 Apache，请使用 2.4以上版本。</p>
-<h3 id="PHP版本"><a href="#PHP版本" class="headerlink" title="PHP版本"></a>PHP版本</h3><p>请使用 7.1 以上版本。</p>
-<h4 id="扩展模块"><a href="#扩展模块" class="headerlink" title="扩展模块"></a>扩展模块</h4><p>取决于你的操作系统和软件版本和PHP的安装方式的不同，php包含的扩展模块可能不一样，<br>但是你可以检查一下以下的列表，如果已安装了这些扩展，那么基本上不会有问题，<br>因为这是从开发人员的环境列出的清单：</p>
+        <blockquote>
+<p>本文介绍非开发者用户如何安装 WeeShop，如果你是开发者请 <a href="../dev_guide/project.html">使用 Composer 进行工程创建</a></p>
+</blockquote>
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>请前往 <a href="https://github.com/weeshop/WeeShop/releases" target="_blank" rel="noopener">WeeShop Github 版本发布页面</a> 
+下载最新版本的发行包。</p>
+<h2 id="使用-Docker-镜像安装"><a href="#使用-Docker-镜像安装" class="headerlink" title="使用 Docker 镜像安装"></a>使用 Docker 镜像安装</h2><p>WeeShop 自带 Docker 镜像，如果会使用 Docker，安装将会非常方便。</p>
+<p>在源码的根目录有一个 <code>docker-compose.yml</code> 文件，文件中已编排了一个 web 容器和一个 db 容器， 
+如果主机已经安装了 docker，那么可以直接在源码根目录运行以下命令即可：
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose up -d</span><br></pre></td></tr></table></figure></p>
+<p>运行命令后，通过访问 <code>http://localhost:8080</code> 即可打开 WeeShop 的图形安装界面，按提示输入必要信息安装即可。
+需要注意的是，数据库的设置：</p>
+<ul>
+<li>主机: db</li>
+<li>端口：3306</li>
+<li>用户：root</li>
+<li>密码：123</li>
+<li>数据库：weeshop</li>
+</ul>
+<h2 id="自定义服务器环境安装"><a href="#自定义服务器环境安装" class="headerlink" title="自定义服务器环境安装"></a>自定义服务器环境安装</h2><p>由于 Docker 的便利性，强列建议使用 Docker 方式进行安装。</p>
+<p>如果要自行架设置 Apache 和 MySQL 环境，请根据以下的要求来配置。</p>
+<h4 id="运行环境要求"><a href="#运行环境要求" class="headerlink" title="运行环境要求"></a>运行环境要求</h4><ul>
+<li>操作系统：任何支持 PHP 的操作系统，如 Windows/Linux/MacOS</li>
+<li>HTTP服务器：暂时只支持 Apache，请使用 2.4以上版本，并且需要开启 rewrite。</li>
+<li>PHP版本：请使用 7.1 以上版本。</li>
+<li>MySQL版本：请使用 Mysql 5.7或以上的版本。</li>
+</ul>
+<h4 id="需要PHP扩展列表"><a href="#需要PHP扩展列表" class="headerlink" title="需要PHP扩展列表"></a>需要PHP扩展列表</h4><p>取决于你的操作系统和软件版本和PHP的安装方式的不同，php包含的扩展模块可能不一样，
+但是你可以检查一下以下的列表，如果已安装了这些扩展，那么基本上不会有问题，因为这是从开发人员的环境列出的清单：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">bash-4.4<span class="comment"># php -m</span></span><br><span class="line">[PHP Modules]</span><br><span class="line">apcu</span><br><span class="line">bcmath</span><br><span class="line">bz2</span><br><span class="line">calendar</span><br><span class="line">Core</span><br><span class="line">ctype</span><br><span class="line">curl</span><br><span class="line">date</span><br><span class="line">dom</span><br><span class="line">exif</span><br><span class="line">fileinfo</span><br><span class="line">filter</span><br><span class="line">ftp</span><br><span class="line">gd</span><br><span class="line">gettext</span><br><span class="line"><span class="built_in">hash</span></span><br><span class="line">iconv</span><br><span class="line">imagick</span><br><span class="line">intl</span><br><span class="line">json</span><br><span class="line">ldap</span><br><span class="line">libxml</span><br><span class="line">mbstring</span><br><span class="line">mcrypt</span><br><span class="line">mysqli</span><br><span class="line">mysqlnd</span><br><span class="line">openssl</span><br><span class="line">pcntl</span><br><span class="line">pcre</span><br><span class="line">PDO</span><br><span class="line">pdo_mysql</span><br><span class="line">pdo_sqlite</span><br><span class="line">Phar</span><br><span class="line">posix</span><br><span class="line">readline</span><br><span class="line">redis</span><br><span class="line">Reflection</span><br><span class="line">session</span><br><span class="line">shmop</span><br><span class="line">SimpleXML</span><br><span class="line">soap</span><br><span class="line">sockets</span><br><span class="line">SPL</span><br><span class="line">sqlite3</span><br><span class="line">standard</span><br><span class="line">sysvmsg</span><br><span class="line">sysvsem</span><br><span class="line">sysvshm</span><br><span class="line">tokenizer</span><br><span class="line">wddx</span><br><span class="line">xml</span><br><span class="line">xmlreader</span><br><span class="line">xmlrpc</span><br><span class="line">xmlwriter</span><br><span class="line">xsl</span><br><span class="line">Zend OPcache</span><br><span class="line">zip</span><br><span class="line">zlib</span><br><span class="line"></span><br><span class="line">[Zend Modules]</span><br><span class="line">Zend OPcache</span><br></pre></td></tr></table></figure>
-<h3 id="MySQL版本"><a href="#MySQL版本" class="headerlink" title="MySQL版本"></a>MySQL版本</h3><p>请使用 Mysql 5.7或以上的版本。</p>
-<h3 id="Composer-版本"><a href="#Composer-版本" class="headerlink" title="Composer 版本"></a>Composer 版本</h3><p>本工程使用 Composer 管理源码依赖，<br>请尽可能使用最新版本的 Composer。</p>
-<h2 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h2><h3 id="下载源码"><a href="#下载源码" class="headerlink" title="下载源码"></a>下载源码</h3><p>暂时来说，你需要用 git 来下载源码：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 用git下载代码到当前目录</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/weeshop/WeeShop.git</span><br><span class="line"><span class="built_in">cd</span> WeeShop</span><br><span class="line"></span><br><span class="line"><span class="comment"># 拉取子库代码</span></span><br><span class="line">git submodule init</span><br><span class="line">git submodule update</span><br></pre></td></tr></table></figure>
-<h3 id="安装源码依赖"><a href="#安装源码依赖" class="headerlink" title="安装源码依赖"></a>安装源码依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> commerce</span><br><span class="line">composer install -vvv</span><br></pre></td></tr></table></figure>
-<h3 id="执行安装"><a href="#执行安装" class="headerlink" title="执行安装"></a>执行安装</h3><ul>
-<li>把 <code>commerce/web</code> 目录设置为 apache的站点根目录</li>
-<li>确保 apache 进程对 <code>commerce/web/sites/default</code> 目录拥有可写权限，其他目录权需可读权限即可。</li>
-<li>在浏览器中访问 apache 站点，即可打开WeeShop的图形化安装界面</li>
-<li>按照图形界面的要求填写数据库连接信息，和站点信息、管理员账号信息，即可完成安装</li>
+<h2 id="执行安装"><a href="#执行安装" class="headerlink" title="执行安装"></a>执行安装</h2><ul>
+<li>解压源码包，把 web 目录设置为 apache 站点根目录。</li>
+<li>确保 apache 进程对 <code>web/sites/default</code> 目录拥有可写权限，其他目录权需可读权限即可。</li>
+<li>在浏览器中访问 apache 站点，即可打开WeeShop的图形化安装界面。</li>
+<li>按照图形界面的要求填写数据库连接信息，和站点信息、管理员账号信息，即可完成安装。</li>
 </ul>
 
         <div id="react-support-footer-root"></div>
